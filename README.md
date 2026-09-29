@@ -8,7 +8,7 @@ Live: https://amirizalrahmat0799.github.io/myPortfolio/
 
 Plain HTML, CSS and JavaScript: no framework, no build step, no jQuery.
 
-- Dark and light themes (follows the OS setting, with a toggle that remembers your choice)
+- Dark "galaxy" theme: an animated canvas starfield with shooting stars and drifting nebula glow (pauses when the tab is hidden, and stays still for visitors who prefer reduced motion)
 - Responsive down to small phones, keyboard-accessible, respects reduced-motion
 - SEO and social preview meta tags plus JSON-LD `Person` schema
 

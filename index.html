@@ -6,7 +6,7 @@
   <title>Ahmad Amirizal | Java Developer · Full-Stack Engineer</title>
   <meta name="description" content="Ahmad Amirizal Rahmat: Java and Spring Boot developer in Kuala Lumpur with 4+ years building secure payment, banking, insurance and telecom systems.">
   <meta name="author" content="Ahmad Amirizal Rahmat">
-  <meta name="theme-color" content="#0b0f14">
+  <meta name="theme-color" content="#05060f">
   <link rel="canonical" href="https://amirizalrahmat0799.github.io/myPortfolio/">
 
   <!-- Social previews -->
@@ -24,14 +24,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/site.css">
-
-  <!-- Apply saved theme before paint to avoid a flash -->
-  <script>
-    try {
-      var t = localStorage.getItem('theme');
-      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
-    } catch (e) {}
-  </script>
 
   <script type="application/ld+json">
   {
@@ -52,6 +44,10 @@
 </head>
 
 <body>
+  <!-- Galaxy backdrop: nebula glow + animated starfield (decorative) -->
+  <div class="nebula" aria-hidden="true"></div>
+  <canvas class="starfield" aria-hidden="true"></canvas>
+
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ============ Header ============ -->
@@ -73,10 +69,6 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
         <li class="nav-actions">
-          <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
-            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-          </button>
           <a class="btn btn-small" href="assets/resume/Ahmad_Amirizal_Resume.pdf" download>Resume</a>
         </li>
       </ul>
@@ -117,6 +109,8 @@
       </div>
 
       <div class="hero-visual">
+        <div class="orbit orbit-outer" aria-hidden="true"><span class="planet planet-cyan"></span></div>
+        <div class="orbit orbit-inner" aria-hidden="true"><span class="planet planet-pink"></span></div>
         <div class="avatar-wrap">
           <img src="assets/img/avatar.jpg" alt="Portrait of Ahmad Amirizal" width="480" height="480" class="avatar">
         </div>
@@ -284,11 +278,15 @@
       <header class="section-head">
         <p class="eyebrow">03 · Projects</p>
         <h2>Things I've built</h2>
+        <p class="section-lead">
+          One payment platform, built piece by piece: a gateway, the dashboard merchants use, the Kubernetes setup it runs on,
+          and an AI assistant that answers merchants' questions.
+        </p>
       </header>
 
       <article class="featured card">
         <div class="featured-text">
-          <span class="tag tag-accent">Featured · 2026</span>
+          <span class="tag tag-accent">Featured · Core · 2026</span>
           <h3>Payment Gateway Simulator</h3>
           <p>
             An event-driven card payment gateway built as four Spring Boot microservices. It covers the full money flow:
@@ -305,7 +303,10 @@
             <li>Java 21</li><li>Spring Boot 3.5</li><li>Kafka</li><li>Spring Batch</li><li>PostgreSQL</li><li>Flyway</li><li>Docker</li><li>GitHub Actions</li>
           </ul>
           <div class="links">
-            <a class="btn" href="https://github.com/amirizalrahmat0799/payment-gateway-sim" target="_blank" rel="noopener">View on GitHub</a>
+            <a class="btn" href="https://github.com/amirizalrahmat0799/payment-gateway-sim" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+              View on GitHub
+            </a>
           </div>
         </div>
 
@@ -334,20 +335,86 @@
         </figure>
       </article>
 
-      <div class="project-grid single">
+      <div class="project-grid">
 
         <article class="card project">
           <div class="project-top">
-            <span class="tag">2021</span>
-            <a href="https://github.com/amirizalrahmat0799/leave_system" target="_blank" rel="noopener" aria-label="Leave Management System on GitHub" class="gh">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
-            </a>
+            <span class="project-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>
+            </span>
+            <span class="tag">Frontend · 2026</span>
           </div>
-          <h3>Leave Management System</h3>
-          <p>My final year project: a web system for staff to apply for leave and for approvers to process requests.</p>
-          <ul class="chips"><li>PHP</li><li>JavaScript</li><li>jQuery</li></ul>
+          <h3>Merchant Dashboard</h3>
+          <p>
+            The React app merchants use to track payments, capture, void and refund them, take card payments through a
+            virtual terminal, and follow their payouts. The live demo simulates the whole gateway in the browser.
+          </p>
+          <ul class="points">
+            <li>Idempotent checkout: one key per attempt, so retries never charge twice</li>
+            <li>Card numbers go only to tokenization, never to the payment API</li>
+          </ul>
+          <ul class="chips"><li>React 19</li><li>TypeScript</li><li>Tailwind CSS 4</li><li>TanStack Query</li><li>MSW</li><li>Vitest</li></ul>
+          <div class="project-links">
+            <a class="btn btn-small" href="https://amirizalrahmat0799.github.io/merchant-dashboard/" target="_blank" rel="noopener">
+              Live demo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a class="btn btn-small btn-ghost" href="https://github.com/amirizalrahmat0799/merchant-dashboard" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </article>
 
+        <article class="card project">
+          <div class="project-top">
+            <span class="project-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 20.5 7v10L12 22 3.5 17V7z"/><circle cx="12" cy="12" r="3"/><path d="M12 5v4M12 15v4M5.8 8.5l3.5 2M14.7 13.5l3.5 2M18.2 8.5l-3.5 2M9.3 13.5l-3.5 2"/></svg>
+            </span>
+            <span class="tag">DevOps · CKAD prep</span>
+          </div>
+          <h3>Payment Gateway on Kubernetes</h3>
+          <p>
+            The whole platform deployed to a 3-node kind cluster with hand-written YAML and Kustomize, monitored with
+            Prometheus and Grafana, and tested end to end in CI. Built as hands-on practice for the CKAD exam.
+          </p>
+          <ul class="points">
+            <li>Ingress, StatefulSets for Postgres and Kafka, HPA, PDB and a settlement CronJob</li>
+            <li>Restricted Pod Security, NetworkPolicies and probes on every service</li>
+          </ul>
+          <ul class="chips"><li>Kubernetes</li><li>Kustomize</li><li>kind</li><li>Prometheus</li><li>Grafana</li><li>GitHub Actions</li></ul>
+          <div class="project-links">
+            <a class="btn btn-small btn-ghost" href="https://github.com/amirizalrahmat0799/payment-gateway-k8s" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-top">
+            <span class="project-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>
+            </span>
+            <span class="tag">AI · 2026</span>
+          </div>
+          <h3>Payment Assistant</h3>
+          <p>
+            An AI support assistant that answers merchants' questions, like "why was my payment declined?", from their own
+            live data through tool calling and from the gateway docs through RAG.
+          </p>
+          <ul class="points">
+            <li>Runs on Amazon Bedrock (Claude Haiku) or local models via Ollama, one profile switch</li>
+            <li>Read-only tools scoped to the merchant's API key, with per-merchant rate limits</li>
+          </ul>
+          <ul class="chips"><li>Spring AI 1.1</li><li>Amazon Bedrock</li><li>Ollama</li><li>RAG</li><li>pgvector</li><li>Java 21</li></ul>
+          <div class="project-links">
+            <a class="btn btn-small btn-ghost" href="https://github.com/amirizalrahmat0799/payment-assistant" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="archive card">
+        <span class="tag">2021 · Final year project</span>
+        <p><strong>Leave Management System</strong>: a web app for staff to apply for leave and for approvers to process requests. <span class="archive-stack">PHP · JavaScript · jQuery</span></p>
+        <a class="gh" href="https://github.com/amirizalrahmat0799/leave_system" target="_blank" rel="noopener" aria-label="Leave Management System on GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+        </a>
       </div>
     </section>
 
@@ -363,7 +430,7 @@
           <h3>Backend</h3>
           <ul class="chips">
             <li>Java</li><li>Spring Boot</li><li>Spring Framework</li><li>Spring Security</li><li>Hibernate</li>
-            <li>RESTful APIs</li><li>Swagger / OpenAPI</li><li>J2EE</li><li>Servlet / JSP</li><li>SLF4J</li>
+            <li>RESTful APIs</li><li>Swagger / OpenAPI</li><li>Spring Batch</li><li>Spring AI</li><li>J2EE</li><li>Servlet / JSP</li><li>SLF4J</li>
           </ul>
         </div>
         <div class="card skill-group">
@@ -377,19 +444,19 @@
         <div class="card skill-group">
           <h3>Cloud &amp; DevOps</h3>
           <ul class="chips">
-            <li>AWS</li><li>Docker</li><li>Kubernetes</li><li>Jenkins</li><li>CI/CD</li><li>Apache Kafka</li>
+            <li>AWS</li><li>Amazon Bedrock</li><li>Docker</li><li>Kubernetes</li><li>Kustomize</li><li>Prometheus / Grafana</li><li>Jenkins</li><li>CI/CD</li><li>Apache Kafka</li>
             <li>Maven</li><li>Gradle</li><li>Git</li><li>SonarQube</li>
           </ul>
         </div>
         <div class="card skill-group">
           <h3>Databases</h3>
-          <ul class="chips"><li>PostgreSQL</li><li>Oracle SQL</li><li>MySQL</li><li>SQL Server</li><li>IBM DB2</li><li>MongoDB</li></ul>
+          <ul class="chips"><li>PostgreSQL</li><li>Oracle SQL</li><li>MySQL</li><li>SQL Server</li><li>IBM DB2</li><li>MongoDB</li><li>pgvector</li></ul>
         </div>
         <div class="card skill-group">
           <h3>Practices</h3>
           <ul class="chips">
             <li>Microservices</li><li>Batch Payment Processing</li><li>API Integration</li><li>JUnit &amp; Mockito</li>
-            <li>Agile / Scrum</li><li>AI-Assisted Development</li>
+            <li>Event-Driven Design</li><li>LLM Tool Calling &amp; RAG</li><li>Agile / Scrum</li><li>AI-Assisted Development</li>
           </ul>
         </div>
       </div>
