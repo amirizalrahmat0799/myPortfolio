@@ -114,16 +114,6 @@
         <div class="avatar-wrap">
           <img src="assets/img/avatar.jpg" alt="Portrait of Ahmad Amirizal" width="480" height="480" class="avatar">
         </div>
-        <div class="code-card" aria-hidden="true">
-          <div class="code-bar"><span></span><span></span><span></span><em>PaymentService.java</em></div>
-<pre><code><span class="k">@Transactional</span>
-<span class="k">public</span> Payment <span class="f">capture</span>(UUID id) {
-  Payment p = <span class="f">load</span>(id);
-  p.<span class="f">capture</span>();            <span class="c">// state machine</span>
-  outbox.<span class="f">append</span>(captured(p)); <span class="c">// same tx</span>
-  <span class="k">return</span> p;
-}</code></pre>
-        </div>
       </div>
     </section>
 

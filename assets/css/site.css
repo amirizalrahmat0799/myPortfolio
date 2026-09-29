@@ -242,25 +242,6 @@ strong { color: var(--text); font-weight: 600; }
 .planet-pink { left: auto; right: -5px; width: 10px; height: 10px; margin-top: -5px; background: radial-gradient(circle at 35% 35%, #ffe0f6, var(--pink) 60%, #a8307f); box-shadow: 0 0 14px var(--pink); }
 @keyframes spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
 
-.code-card {
-  position: absolute; z-index: 2; left: -120px; bottom: -118px; width: 312px;
-  background: rgba(10, 11, 30, .82); color: #d5d8f5;
-  border: 1px solid var(--border-strong); border-radius: 12px;
-  box-shadow: 0 20px 50px -12px rgba(0, 0, 0, .7), 0 0 30px -10px rgba(139, 123, 255, .5);
-  backdrop-filter: blur(10px);
-  font-family: var(--mono); font-size: 11.5px; line-height: 1.6;
-}
-.code-bar { display: flex; align-items: center; gap: 6px; padding: 9px 12px; border-bottom: 1px solid var(--border); }
-.code-bar span { width: 9px; height: 9px; border-radius: 50%; background: #3a3f6b; }
-.code-bar span:first-child { background: #ff6b9a; }
-.code-bar span:nth-child(2) { background: #ffd36b; }
-.code-bar span:nth-child(3) { background: var(--cyan); }
-.code-bar em { margin-left: 8px; font-style: normal; color: var(--faint); font-size: 11px; }
-.code-card pre { margin: 0; padding: 12px 14px; overflow: hidden; }
-.code-card .k { color: var(--pink); }
-.code-card .f { color: var(--cyan); }
-.code-card .c { color: var(--faint); }
-
 /* ---------- Facts ---------- */
 .facts {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
@@ -475,8 +456,6 @@ strong { color: var(--text); font-weight: 600; }
 @media (max-width: 960px) {
   .hero { grid-template-columns: 1fr; gap: 72px; padding-top: 56px; }
   .hero-visual { width: min(78%, 330px); }
-  .code-card { left: auto; right: -110px; bottom: -110px; }
-  .hero-visual { margin-bottom: 90px; }
   .about-grid, .featured { grid-template-columns: 1fr; }
   .project-grid, .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .facts { grid-template-columns: repeat(2, 1fr); }
@@ -502,7 +481,6 @@ strong { color: var(--text); font-weight: 600; }
   .section { padding-top: 80px; }
   .lead { font-size: 16.5px; }
   .hero-visual { width: min(72%, 280px); }
-  .code-card { position: relative; left: 50%; right: auto; bottom: 0; width: min(310px, 88vw); transform: translateX(-50%); margin-top: 36px; }
   .job { grid-template-columns: 1fr; gap: 6px; }
   .job-meta { padding-left: 34px; }
   .project-grid, .skills-grid { grid-template-columns: 1fr; }
