@@ -415,3 +415,6 @@ strong { color: var(--text); font-weight: 600; }
 
 /* Solid header while the mobile menu is open */
 .site-header:has(.nav-links.open) { background: var(--bg); border-bottom-color: var(--border); }
+
+/* Only one secondary project: let it span the full width */
+.project-grid.single { grid-template-columns: 1fr; }
