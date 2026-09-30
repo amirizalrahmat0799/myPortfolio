@@ -1,4 +1,4 @@
-# myPortfolio
+# My Portfolio
 
 [![Pages](https://github.com/amirizalrahmat0799/myPortfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/amirizalrahmat0799/myPortfolio/actions/workflows/pages/pages-build-deployment)
 ![HTML · CSS · JS](https://img.shields.io/badge/HTML_·_CSS_·_JS-no_dependencies-8b7bff)
