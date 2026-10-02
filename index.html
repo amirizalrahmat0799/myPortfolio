@@ -269,8 +269,8 @@
         <p class="eyebrow">03 · Projects</p>
         <h2>Things I've built</h2>
         <p class="section-lead">
-          One payment platform, built piece by piece: a gateway, the dashboard merchants use, the Kubernetes setup it runs on,
-          and an AI assistant that answers merchants' questions.
+          A payment platform built piece by piece (the gateway, the dashboard merchants use, the Kubernetes setup it runs on
+          and an AI assistant), plus an offline-first mobile app and the CI/CD tooling I build them with.
         </p>
       </header>
 
@@ -397,15 +397,65 @@
           </div>
         </article>
 
+        <article class="card project">
+          <div class="project-top">
+            <span class="project-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/><path d="M9 11.5h6M12 8.5v6"/></svg>
+            </span>
+            <span class="tag">Mobile · 2026</span>
+          </div>
+          <h3>Kira: Offline-First Finance App</h3>
+          <p>
+            An Android and iOS app for spending, budgets and recurring bills that works fully offline on SQLite and syncs
+            between devices through a Spring Boot API.
+          </p>
+          <ul class="points">
+            <li>Last-write-wins sync with tombstones and a per-user lock, so no edit is lost</li>
+            <li>Budget alerts at 80% and 100%, and reminders before bills are due</li>
+          </ul>
+          <ul class="chips"><li>React Native</li><li>Expo</li><li>SQLite</li><li>Spring Boot</li><li>PostgreSQL</li><li>JWT</li></ul>
+          <div class="project-links">
+            <a class="btn btn-small" href="https://github.com/amirizalrahmat0799/kira-finance/releases/latest" target="_blank" rel="noopener">
+              Download APK
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+            </a>
+            <a class="btn btn-small btn-ghost" href="https://github.com/amirizalrahmat0799/kira-finance" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-top">
+            <span class="project-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="12" r="2.5"/><path d="M5 8.5v7M7.5 6h4a4 4 0 0 1 4 4v0.5M7.5 18h4a4 4 0 0 0 4-4v-0.5"/></svg>
+            </span>
+            <span class="tag">CI/CD · 2026</span>
+          </div>
+          <h3>Jenkins CI Lab</h3>
+          <p>
+            A starter CI/CD kit: a self-hosted Jenkins defined entirely as code, so one command brings up the same fully
+            configured server every time.
+          </p>
+          <ul class="points">
+            <li>Every branch builds in throwaway Docker containers, with PostgreSQL for integration tests</li>
+            <li>Jenkinsfile templates for Maven, Node and local Docker deployment</li>
+          </ul>
+          <ul class="chips"><li>Jenkins</li><li>JCasC</li><li>Job DSL</li><li>Docker Compose</li><li>Groovy</li></ul>
+          <div class="project-links">
+            <a class="btn btn-small btn-ghost" href="https://github.com/amirizalrahmat0799/jenkins-ci-lab" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <a class="card project more-card" href="https://github.com/amirizalrahmat0799" target="_blank" rel="noopener">
+          <span class="project-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+          </span>
+          <h3>More on GitHub</h3>
+          <p>Every project here is public on GitHub, with a README on how it works and how to run it.</p>
+          <span class="more-link">github.com/amirizalrahmat0799 <span aria-hidden="true">→</span></span>
+        </a>
+
       </div>
 
-      <div class="archive card">
-        <span class="tag">2021 · Final year project</span>
-        <p><strong>Leave Management System</strong>: a web app for staff to apply for leave and for approvers to process requests. <span class="archive-stack">PHP · JavaScript · jQuery</span></p>
-        <a class="gh" href="https://github.com/amirizalrahmat0799/leave_system" target="_blank" rel="noopener" aria-label="Leave Management System on GitHub">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
-        </a>
-      </div>
     </section>
 
     <!-- ============ Skills ============ -->
@@ -429,24 +479,24 @@
         </div>
         <div class="card skill-group">
           <h3>Frontend</h3>
-          <ul class="chips"><li>React</li><li>Angular</li><li>TypeScript</li><li>JavaScript</li><li>Node.js</li><li>HTML</li><li>CSS</li></ul>
+          <ul class="chips"><li>React</li><li>React Native (Expo)</li><li>Angular</li><li>TypeScript</li><li>JavaScript</li><li>Node.js</li><li>HTML</li><li>CSS</li></ul>
         </div>
         <div class="card skill-group">
           <h3>Cloud &amp; DevOps</h3>
           <ul class="chips">
-            <li>AWS</li><li>Amazon Bedrock</li><li>Docker</li><li>Kubernetes</li><li>Kustomize</li><li>Prometheus / Grafana</li><li>Jenkins</li><li>CI/CD</li><li>Apache Kafka</li>
+            <li>AWS</li><li>Amazon Bedrock</li><li>Docker</li><li>Kubernetes</li><li>Kustomize</li><li>Prometheus / Grafana</li><li>Jenkins (JCasC, Job DSL)</li><li>Docker Compose</li><li>CI/CD</li><li>Apache Kafka</li>
             <li>Maven</li><li>Gradle</li><li>Git</li><li>SonarQube</li>
           </ul>
         </div>
         <div class="card skill-group">
           <h3>Databases</h3>
-          <ul class="chips"><li>PostgreSQL</li><li>Oracle SQL</li><li>MySQL</li><li>SQL Server</li><li>IBM DB2</li><li>MongoDB</li><li>pgvector</li></ul>
+          <ul class="chips"><li>PostgreSQL</li><li>Oracle SQL</li><li>MySQL</li><li>SQL Server</li><li>IBM DB2</li><li>MongoDB</li><li>SQLite</li><li>pgvector</li></ul>
         </div>
         <div class="card skill-group">
           <h3>Practices</h3>
           <ul class="chips">
             <li>Microservices</li><li>Batch Payment Processing</li><li>API Integration</li><li>JUnit &amp; Mockito</li>
-            <li>Event-Driven Design</li><li>LLM Tool Calling &amp; RAG</li><li>Agile / Scrum</li><li>AI-Assisted Development</li>
+            <li>Event-Driven Design</li><li>Offline-First Sync</li><li>LLM Tool Calling &amp; RAG</li><li>Agile / Scrum</li><li>AI-Assisted Development</li>
           </ul>
         </div>
       </div>

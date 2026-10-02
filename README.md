@@ -20,7 +20,7 @@ Hero · About · Experience timeline · Projects · Skills · Education · Conta
 
 ## Featured projects
 
-The Projects section showcases one payment platform, built piece by piece:
+The Projects section showcases a payment platform built piece by piece, plus a mobile app and CI/CD tooling:
 
 | Project | What it is |
 |---|---|
@@ -28,6 +28,8 @@ The Projects section showcases one payment platform, built piece by piece:
 | [Merchant Dashboard](https://github.com/amirizalrahmat0799/merchant-dashboard) ([live demo](https://amirizalrahmat0799.github.io/merchant-dashboard/)) | React 19 + TypeScript app merchants use to manage payments, refunds and payouts |
 | [Payment Gateway on Kubernetes](https://github.com/amirizalrahmat0799/payment-gateway-k8s) | The whole platform on a 3-node kind cluster with Kustomize, Prometheus and Grafana, built as CKAD preparation |
 | [Payment Assistant](https://github.com/amirizalrahmat0799/payment-assistant) | AI support assistant on Spring AI + Amazon Bedrock, using tool calling and RAG |
+| [Kira](https://github.com/amirizalrahmat0799/kira-finance) ([APK](https://github.com/amirizalrahmat0799/kira-finance/releases/latest)) | Offline-first personal finance app: React Native (Expo) and SQLite, syncing through a Spring Boot API |
+| [Jenkins CI Lab](https://github.com/amirizalrahmat0799/jenkins-ci-lab) | Starter CI/CD: a self-hosted Jenkins defined as code, with Jenkinsfile templates |
 
 ## Features
 

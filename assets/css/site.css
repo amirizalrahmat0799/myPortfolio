@@ -383,12 +383,12 @@ strong { color: var(--text); font-weight: 600; }
 }
 .project-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
 
-.archive {
-  display: flex; align-items: center; gap: 16px; margin-top: 20px; padding: 16px 20px;
-  background: rgba(18, 20, 46, .35);
+.more-card {
+  align-items: center; justify-content: center; text-align: center;   border-style: dashed; border-color: var(--border-strong); background: rgba(18, 20, 46, .35);
 }
-.archive p { margin: 0; flex: 1; color: var(--muted); font-size: 15px; }
-.archive-stack { font-family: var(--mono); font-size: 12.5px; color: var(--faint); white-space: nowrap; }
+.more-card .project-icon { width: 52px; height: 52px; border-radius: 50%; margin-bottom: 16px; }
+.more-card p { flex: 0; max-width: 30ch; }
+.more-link { font-family: var(--mono); font-size: 13px; color: var(--cyan); margin-top: 8px; }
 .gh {
   display: grid; place-items: center; flex: none; width: 34px; height: 34px; border-radius: 50%;
   color: var(--muted); border: 1px solid var(--border);
@@ -485,8 +485,6 @@ strong { color: var(--text); font-weight: 600; }
   .job-meta { padding-left: 34px; }
   .project-grid, .skills-grid { grid-template-columns: 1fr; }
   .featured { padding: 24px; }
-  .archive { flex-wrap: wrap; }
-  .archive-stack { white-space: normal; }
   .edu { flex-direction: column; align-items: flex-start; gap: 8px; }
   .contact { padding: 44px 20px; }
   .site-footer { flex-direction: column; background-size: calc(100% - 32px) 1px; }
